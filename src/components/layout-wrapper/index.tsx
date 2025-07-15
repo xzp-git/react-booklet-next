@@ -22,7 +22,7 @@ export default function LayoutWrapper({children}: {children: React.ReactNode}) {
   );
 
   return (
-    <Layout className="h-[100vh]">
+    <Layout className="h-screen">
       <Sider collapsible>
         <div className="demo-logo-vertical" />
         <Menu

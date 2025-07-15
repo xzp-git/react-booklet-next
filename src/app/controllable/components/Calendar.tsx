@@ -1,3 +1,4 @@
+'use client';
 import useControllableState from '@/hooks/useControllableState';
 
 interface CalendarProps {
@@ -16,7 +17,7 @@ function Calendar(props: CalendarProps) {
 
   return (
     <div>
-      {mergedValue?.toLocaleDateString()}
+      {mergedValue?.toLocaleDateString('zh-CN')}
       <div
         onClick={() => {
           setValue(new Date('2024-5-1'));
