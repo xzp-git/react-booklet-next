@@ -11,15 +11,30 @@ importers:
       ahooks:
         specifier: ^3.9.0
         version: 3.9.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      antd:
+        specifier: 6.0.0-alpha.0
+        version: 6.0.0-alpha.0(father@4.6.1(@babel/core@7.28.0)(@types/node@20.19.7)(@types/webpack@5.28.5)(styled-components@6.1.19(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(webpack@5.100.2))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      classnames:
+        specifier: ^2.5.1
+        version: 2.5.1
       next:
         specifier: 15.3.5
         version: 15.3.5(@babel/core@7.28.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(sass@1.54.0)
       react:
         specifier: ^19.0.0
         version: 19.1.0
+      react-dnd:
+        specifier: ^16.0.1
+        version: 16.0.1(@types/node@20.19.7)(@types/react@19.1.8)(react@19.1.0)
+      react-dnd-html5-backend:
+        specifier: ^16.0.1
+        version: 16.0.1
       react-dom:
         specifier: ^19.0.0
         version: 19.1.0(react@19.1.0)
+      zustand:
+        specifier: ^5.0.6
+        version: 5.0.6(@types/react@19.1.8)(react@19.1.0)
     devDependencies:
       '@eslint/eslintrc':
         specifier: ^3
@@ -36,9 +51,6 @@ importers:
       '@types/react-dom':
         specifier: ^19
         version: 19.1.6(@types/react@19.1.8)
-      antd:
-        specifier: 6.0.0-alpha.0
-        version: 6.0.0-alpha.0(father@4.6.1(@babel/core@7.28.0)(@types/node@20.19.7)(@types/webpack@5.28.5)(styled-components@6.1.19(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(webpack@5.100.1))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       eslint:
         specifier: ^9
         version: 9.31.0(jiti@2.4.2)
@@ -1170,8 +1182,8 @@ packages:
       react: '>=16.0.0'
       react-dom: '>=16.0.0'
 
-  '@rc-component/select@1.1.2':
-    resolution: {integrity: sha512-OTmsL/t0XqcaZZ5uPk1rPfHiD9eUN8+p4W7dbsJU2Pe+fzDnvH6z3u9H209hbdkpP5qO0CxuguFAT4uM/eUv0A==}
+  '@rc-component/select@1.1.3':
+    resolution: {integrity: sha512-4voFGR2MYz2DZVlvpxOdQkNwqL29Npx5FJJFKhKCCAhxsVtBuKXVQ72kojizrVE/mCwNj9+EpqY9ceFRXt6ngg==}
     engines: {node: '>=8.x'}
     peerDependencies:
       react: '*'
@@ -1236,8 +1248,8 @@ packages:
       react: '*'
       react-dom: '*'
 
-  '@rc-component/trigger@3.4.1':
-    resolution: {integrity: sha512-ErrCtITLibrkjVsJtvvlV8r9PSalqpYmb2WWEtPF5U1sw2nK0UYZykcnYVdzF7xN4d2Q8pb8WyNumm8LQ6GyqQ==}
+  '@rc-component/trigger@3.5.0':
+    resolution: {integrity: sha512-cygoGq2xr8JVLq4svfKtd3ci0OotjaXzs55T7ruNwesnAPuWcV2Pq+mNxqM9VLtizbe0Pzup9kMUCkAjPgYvQw==}
     engines: {node: '>=8.x'}
     peerDependencies:
       react: '>=18.0.0'
@@ -1248,6 +1260,15 @@ packages:
     peerDependencies:
       react: '>=18.0.0'
       react-dom: '>=18.0.0'
+
+  '@react-dnd/asap@5.0.2':
+    resolution: {integrity: sha512-WLyfoHvxhs0V9U+GTsGilGgf2QsPl6ZZ44fnv0/b8T3nQyvzxidxsg/ZltbWssbsRDlYW8UKSQMTGotuTotZ6A==}
+
+  '@react-dnd/invariant@4.0.2':
+    resolution: {integrity: sha512-xKCTqAK/FFauOM9Ta2pswIyT3D8AQlfrYdOi/toTPEhqCuAs1v5tcJ3Y08Izh1cJ5Jchwy9SeAXmMg6zrKs2iw==}
+
+  '@react-dnd/shallowequal@4.0.2':
+    resolution: {integrity: sha512-/RVXdLvJxLg4QKvMoM5WlwNR9ViO9z8B/qPcc+C0Sa/teJY7QG7kJ441DwzOjMYEY7GmU4dj5EcGHIkKZiQZCA==}
 
   '@rtsao/scc@1.1.0':
     resolution: {integrity: sha512-zt6OdqaDoOnJ1ZYsCYGt9YmWzDXl4vQdKTyJev62gFhRGKdx7mcT54V9KIjg+d2wi9EXsPvAPKe7i7WjfVWB8g==}
@@ -1844,8 +1865,8 @@ packages:
   '@xtuc/long@4.2.2':
     resolution: {integrity: sha1-0pHGpOl5ibXGHZrPOWrk/hM6cY0=}
 
-  acorn-import-phases@1.0.3:
-    resolution: {integrity: sha512-jtKLnfoOzm28PazuQ4dVBcE9Jeo6ha1GAJvq3N0LlNOszmTfx+wSycBehn+FN0RnyeR77IBxN/qVYMw0Rlj0Xw==}
+  acorn-import-phases@1.0.4:
+    resolution: {integrity: sha512-wKmbr/DDiIXzEOiWrTTUcDm24kQ2vGfZQvM2fwg2vXqR5uW6aapr7ObPtj1th32b9u90/Pf4AItvdTh42fBmVQ==}
     engines: {node: '>=10.13.0'}
     peerDependencies:
       acorn: ^8.14.0
@@ -2418,6 +2439,9 @@ packages:
   diffie-hellman@5.0.3:
     resolution: {integrity: sha1-QOjumPVaIUlgcUaSHGPhrl89KHU=}
 
+  dnd-core@16.0.1:
+    resolution: {integrity: sha512-HK294sl7tbw6F6IeuK16YSBUoorvHpY8RHO+9yFfaJyCDVb6n7PRcezrOEOa2SBCqiYpemh5Jx20ZcjKdFAVng==}
+
   doctrine@2.1.0:
     resolution: {integrity: sha1-XNAfwQFiG0LEzX9dGmYkNxbT850=}
     engines: {node: '>=0.10.0'}
@@ -2449,8 +2473,8 @@ packages:
   ee-first@1.1.1:
     resolution: {integrity: sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=}
 
-  electron-to-chromium@1.5.182:
-    resolution: {integrity: sha512-Lv65Btwv9W4J9pyODI6EWpdnhfvrve/us5h1WspW8B2Fb0366REPtY3hX7ounk1CkV/TBjWCEvCBBbYbmV0qCA==}
+  electron-to-chromium@1.5.187:
+    resolution: {integrity: sha512-cl5Jc9I0KGUoOoSbxvTywTa40uspGJt/BDBoDLoxJRSBpWh4FFXBsjNRHfQrONsV/OoEjDfHUmZQa2d6Ze4YgA==}
 
   elliptic@6.6.1:
     resolution: {integrity: sha512-RaddvvMatK2LJHqFJ+YA4WysVN5Ita9E35botqIYspQ4TkRAlCicdzKOjlyv/1Za5RyTNn7di//eEV0uTAfe3g==}
@@ -2959,6 +2983,9 @@ packages:
   hmac-drbg@1.0.1:
     resolution: {integrity: sha1-0nRXAQJabHdabFRXk+1QL8DGSaE=}
 
+  hoist-non-react-statics@3.3.2:
+    resolution: {integrity: sha1-7OCsr3HWLClpwuxZ/v9CpLGoW0U=}
+
   hpack.js@2.1.6:
     resolution: {integrity: sha1-h3dMCUnlE/QuhFdbPEVoH63ioLI=}
 
@@ -3281,8 +3308,8 @@ packages:
       webpack:
         optional: true
 
-  less@4.3.0:
-    resolution: {integrity: sha512-X9RyH9fvemArzfdP8Pi3irr7lor2Ok4rOttDXBhlwDg+wKQsXOXgHWduAJE1EsF7JJx0w0bcO6BC6tCKKYnXKA==}
+  less@4.4.0:
+    resolution: {integrity: sha512-kdTwsyRuncDfjEs0DlRILWNvxhDG/Zij4YLO4TMJgDLW+8OzpfkdPnRgrsRuY1o+oaxJGWsps5f/RVBgGmmN0w==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -4174,6 +4201,24 @@ packages:
       react: '>=16.9.0'
       react-dom: '>=16.9.0'
 
+  react-dnd-html5-backend@16.0.1:
+    resolution: {integrity: sha512-Wu3dw5aDJmOGw8WjH1I1/yTH+vlXEL4vmjk5p+MHxP8HuHJS1lAGeIdG/hze1AvNeXWo/JgULV87LyQOr+r5jw==}
+
+  react-dnd@16.0.1:
+    resolution: {integrity: sha512-QeoM/i73HHu2XF9aKksIUuamHPDvRglEwdHL4jsp784BgUuWcg6mzfxT0QDdQz8Wj0qyRKx2eMg8iZtWvU4E2Q==}
+    peerDependencies:
+      '@types/hoist-non-react-statics': '>= 3.3.1'
+      '@types/node': '>= 12'
+      '@types/react': '>= 16'
+      react: '>= 16.14'
+    peerDependenciesMeta:
+      '@types/hoist-non-react-statics':
+        optional: true
+      '@types/node':
+        optional: true
+      '@types/react':
+        optional: true
+
   react-dom@19.1.0:
     resolution: {integrity: sha512-Xs1hdnE+DyKgeHJeJznQmYMIBG3TKIHJJT95Q58nHLSrElKlGQqDTR2HQ9fx5CN/Gk6Vh/kupBTDLU11/nDk/g==}
     peerDependencies:
@@ -4217,6 +4262,9 @@ packages:
   real-require@0.1.0:
     resolution: {integrity: sha512-r/H9MzAWtrv8aSVjPCMFpDMl5q66GqtmmRkRjpHTsp4zBAa+snZyiQNlMONiUmEJcsnaw0wCauJ2GWODr/aFkg==}
     engines: {node: '>= 12.13.0'}
+
+  redux@4.2.1:
+    resolution: {integrity: sha512-LAUYz4lc+Do8/g7aeRa8JkyDErK6ekstQaqWQrNRW//MY1TvCEpMtpTWvlQ+FPbWCx+Xixu/6SHt5N0HR+SB4w==}
 
   reflect.getprototypeof@1.0.10:
     resolution: {integrity: sha512-00o4I+DVrefhv+nX0ulyi3biSHCPDe+yLv5o/p6d/UVlirijB8E16FtfwSAi4g3tcqrQ4lRAqQSoFEZJehYEcw==}
@@ -4810,8 +4858,8 @@ packages:
     resolution: {integrity: sha512-yd1RBzSGanHkitROoPFd6qsrxt+oFhg/129YzheDGqeustzX0vTZJZsSsQjVQC4yzBQ56K55XU8gaNCtIzOnTg==}
     engines: {node: '>=10.13.0'}
 
-  webpack@5.100.1:
-    resolution: {integrity: sha512-YJB/ESPUe2Locd0NKXmw72Dx8fZQk1gTzI6rc9TAT4+Sypbnhl8jd8RywB1bDsDF9Dy1RUR7gn3q/ZJTd0OZZg==}
+  webpack@5.100.2:
+    resolution: {integrity: sha512-QaNKAvGCDRh3wW1dsDjeMdDXwZm2vqq3zn6Pvq4rHOEOGSaUMgOOjG2Y9ZbIGzpfkJk9ZYTHpDqgDfeBDcnLaw==}
     engines: {node: '>=10.13.0'}
     hasBin: true
     peerDependencies:
@@ -4898,6 +4946,24 @@ packages:
 
   zod@3.22.4:
     resolution: {integrity: sha512-iC+8Io04lddc+mVqQ9AZ7OQ2MrUKGN+oIQyq1vemgt46jwCwLfhq7/pwnBnNXXXZb8VTVLKwp9EDkx+ryxIWmg==}
+
+  zustand@5.0.6:
+    resolution: {integrity: sha512-ihAqNeUVhe0MAD+X8M5UzqyZ9k3FFZLBTtqo6JLPwV53cbRB/mJwBI0PxcIgqhBBHlEs8G45OTDTMq3gNcLq3A==}
+    engines: {node: '>=12.20.0'}
+    peerDependencies:
+      '@types/react': '>=18.0.0'
+      immer: '>=9.0.6'
+      react: '>=18.0.0'
+      use-sync-external-store: '>=1.2.0'
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+      immer:
+        optional: true
+      react:
+        optional: true
+      use-sync-external-store:
+        optional: true
 
 snapshots:
 
@@ -5645,7 +5711,7 @@ snapshots:
 
   '@rc-component/cascader@1.5.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
     dependencies:
-      '@rc-component/select': 1.1.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@rc-component/select': 1.1.3(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@rc-component/tree': 1.0.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@rc-component/util': 1.2.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       classnames: 2.5.1
@@ -5696,16 +5762,16 @@ snapshots:
 
   '@rc-component/dropdown@1.0.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
     dependencies:
-      '@rc-component/trigger': 3.4.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@rc-component/trigger': 3.5.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@rc-component/util': 1.2.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       classnames: 2.5.1
       react: 19.1.0
       react-dom: 19.1.0(react@19.1.0)
 
-  '@rc-component/father-plugin@2.1.3(father@4.6.1(@babel/core@7.28.0)(@types/node@20.19.7)(@types/webpack@5.28.5)(styled-components@6.1.19(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(webpack@5.100.1))':
+  '@rc-component/father-plugin@2.1.3(father@4.6.1(@babel/core@7.28.0)(@types/node@20.19.7)(@types/webpack@5.28.5)(styled-components@6.1.19(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(webpack@5.100.2))':
     dependencies:
       chalk: 4.1.2
-      father: 4.6.1(@babel/core@7.28.0)(@types/node@20.19.7)(@types/webpack@5.28.5)(styled-components@6.1.19(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(webpack@5.100.1)
+      father: 4.6.1(@babel/core@7.28.0)(@types/node@20.19.7)(@types/webpack@5.28.5)(styled-components@6.1.19(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(webpack@5.100.2)
       fs-extra: 11.3.0
 
   '@rc-component/form@1.0.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
@@ -5745,7 +5811,7 @@ snapshots:
       '@rc-component/input': 1.0.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@rc-component/menu': 1.1.3(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@rc-component/textarea': 1.0.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      '@rc-component/trigger': 3.4.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@rc-component/trigger': 3.5.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@rc-component/util': 1.2.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       classnames: 2.5.1
       react: 19.1.0
@@ -5754,7 +5820,7 @@ snapshots:
   '@rc-component/menu@1.1.3(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
     dependencies:
       '@rc-component/motion': 1.1.4(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      '@rc-component/trigger': 3.4.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@rc-component/trigger': 3.5.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@rc-component/util': 1.2.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       classnames: 2.5.1
       rc-overflow: 1.4.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
@@ -5797,7 +5863,7 @@ snapshots:
   '@rc-component/picker@1.3.0(dayjs@1.11.13)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
     dependencies:
       '@rc-component/resize-observer': 1.0.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      '@rc-component/trigger': 3.4.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@rc-component/trigger': 3.5.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@rc-component/util': 1.2.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       classnames: 2.5.1
       rc-overflow: 1.4.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
@@ -5844,10 +5910,10 @@ snapshots:
       react: 19.1.0
       react-dom: 19.1.0(react@19.1.0)
 
-  '@rc-component/select@1.1.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
+  '@rc-component/select@1.1.3(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
     dependencies:
       '@rc-component/motion': 1.1.4(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      '@rc-component/trigger': 3.4.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@rc-component/trigger': 3.5.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@rc-component/util': 1.2.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       classnames: 2.5.1
       rc-overflow: 1.4.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
@@ -5899,10 +5965,10 @@ snapshots:
       react: 19.1.0
       react-dom: 19.1.0(react@19.1.0)
 
-  '@rc-component/tooltip@1.2.0(father@4.6.1(@babel/core@7.28.0)(@types/node@20.19.7)(@types/webpack@5.28.5)(styled-components@6.1.19(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(webpack@5.100.1))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
+  '@rc-component/tooltip@1.2.0(father@4.6.1(@babel/core@7.28.0)(@types/node@20.19.7)(@types/webpack@5.28.5)(styled-components@6.1.19(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(webpack@5.100.2))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
     dependencies:
-      '@rc-component/father-plugin': 2.1.3(father@4.6.1(@babel/core@7.28.0)(@types/node@20.19.7)(@types/webpack@5.28.5)(styled-components@6.1.19(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(webpack@5.100.1))
-      '@rc-component/trigger': 3.4.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@rc-component/father-plugin': 2.1.3(father@4.6.1(@babel/core@7.28.0)(@types/node@20.19.7)(@types/webpack@5.28.5)(styled-components@6.1.19(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(webpack@5.100.2))
+      '@rc-component/trigger': 3.5.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@rc-component/util': 1.2.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       classnames: 2.5.1
       react: 19.1.0
@@ -5913,7 +5979,7 @@ snapshots:
   '@rc-component/tour@2.1.6(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
     dependencies:
       '@rc-component/portal': 2.0.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      '@rc-component/trigger': 3.4.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@rc-component/trigger': 3.5.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@rc-component/util': 1.2.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       classnames: 2.5.1
       react: 19.1.0
@@ -5921,7 +5987,7 @@ snapshots:
 
   '@rc-component/tree-select@1.2.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
     dependencies:
-      '@rc-component/select': 1.1.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@rc-component/select': 1.1.3(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@rc-component/tree': 1.0.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@rc-component/util': 1.2.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       classnames: 2.5.1
@@ -5937,7 +6003,7 @@ snapshots:
       react: 19.1.0
       react-dom: 19.1.0(react@19.1.0)
 
-  '@rc-component/trigger@3.4.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
+  '@rc-component/trigger@3.5.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
     dependencies:
       '@rc-component/motion': 1.1.4(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@rc-component/portal': 2.0.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
@@ -5952,6 +6018,12 @@ snapshots:
       react: 19.1.0
       react-dom: 19.1.0(react@19.1.0)
       react-is: 18.3.1
+
+  '@react-dnd/asap@5.0.2': {}
+
+  '@react-dnd/invariant@4.0.2': {}
+
+  '@react-dnd/shallowequal@4.0.2': {}
 
   '@rtsao/scc@1.1.0': {}
 
@@ -6202,7 +6274,7 @@ snapshots:
     dependencies:
       '@types/node': 20.19.7
       tapable: 2.2.2
-      webpack: 5.100.1
+      webpack: 5.100.2
     transitivePeerDependencies:
       - '@swc/core'
       - esbuild
@@ -6338,7 +6410,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@umijs/bundler-webpack@4.4.11(@types/webpack@5.28.5)(typescript@5.4.2)(webpack@5.100.1)':
+  '@umijs/bundler-webpack@4.4.11(@types/webpack@5.28.5)(typescript@5.4.2)(webpack@5.100.2)':
     dependencies:
       '@svgr/core': 6.5.1
       '@svgr/plugin-jsx': 6.5.1(@svgr/core@6.5.1)
@@ -6348,12 +6420,12 @@ snapshots:
       '@umijs/bundler-utils': 4.4.11
       '@umijs/case-sensitive-paths-webpack-plugin': 1.0.1
       '@umijs/mfsu': 4.4.11
-      '@umijs/react-refresh-webpack-plugin': 0.5.11(@types/webpack@5.28.5)(react-refresh@0.14.0)(webpack@5.100.1)
+      '@umijs/react-refresh-webpack-plugin': 0.5.11(@types/webpack@5.28.5)(react-refresh@0.14.0)(webpack@5.100.2)
       '@umijs/utils': 4.4.11
       cors: 2.8.5
-      css-loader: 6.7.1(webpack@5.100.1)
+      css-loader: 6.7.1(webpack@5.100.2)
       es5-imcompatible-versions: 0.1.90
-      fork-ts-checker-webpack-plugin: 8.0.0(typescript@5.4.2)(webpack@5.100.1)
+      fork-ts-checker-webpack-plugin: 8.0.0(typescript@5.4.2)(webpack@5.100.2)
       jest-worker: 29.4.3
       lightningcss: 1.22.1
       node-libs-browser: 2.2.1
@@ -6391,7 +6463,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@umijs/react-refresh-webpack-plugin@0.5.11(@types/webpack@5.28.5)(react-refresh@0.14.0)(webpack@5.100.1)':
+  '@umijs/react-refresh-webpack-plugin@0.5.11(@types/webpack@5.28.5)(react-refresh@0.14.0)(webpack@5.100.2)':
     dependencies:
       ansi-html-community: 0.0.8
       common-path-prefix: 3.0.0
@@ -6403,7 +6475,7 @@ snapshots:
       react-refresh: 0.14.0
       schema-utils: 3.3.0
       source-map: 0.7.4
-      webpack: 5.100.1
+      webpack: 5.100.2
     optionalDependencies:
       '@types/webpack': 5.28.5
 
@@ -6494,21 +6566,21 @@ snapshots:
   '@utoo/pack-win32-x64-msvc@0.0.1-alpha.23':
     optional: true
 
-  '@utoo/pack@0.0.1-alpha.23(@types/webpack@5.28.5)(webpack@5.100.1)':
+  '@utoo/pack@0.0.1-alpha.23(@types/webpack@5.28.5)(webpack@5.100.2)':
     dependencies:
       '@babel/code-frame': 7.22.5
       '@types/webpack': 5.28.5
       '@utoo/loader-runner': 1.0.1
       '@utoo/style-loader': 1.0.1
-      less: 4.3.0
-      less-loader: 12.3.0(less@4.3.0)(webpack@5.100.1)
+      less: 4.4.0
+      less-loader: 12.3.0(less@4.4.0)(webpack@5.100.2)
       nanoid: 3.3.11
       picocolors: 1.1.1
       postcss: 8.4.31
       react-refresh: 0.12.0
       resolve-url-loader: 5.0.0
       sass: 1.54.0
-      sass-loader: 13.3.3(sass@1.54.0)(webpack@5.100.1)
+      sass-loader: 13.3.3(sass@1.54.0)(webpack@5.100.2)
       send: 0.17.1
       ws: 8.18.3
     optionalDependencies:
@@ -6613,7 +6685,7 @@ snapshots:
 
   '@xtuc/long@4.2.2': {}
 
-  acorn-import-phases@1.0.3(acorn@8.15.0):
+  acorn-import-phases@1.0.4(acorn@8.15.0):
     dependencies:
       acorn: 8.15.0
 
@@ -6687,7 +6759,7 @@ snapshots:
 
   ansi-styles@6.2.1: {}
 
-  antd@6.0.0-alpha.0(father@4.6.1(@babel/core@7.28.0)(@types/node@20.19.7)(@types/webpack@5.28.5)(styled-components@6.1.19(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(webpack@5.100.1))(react-dom@19.1.0(react@19.1.0))(react@19.1.0):
+  antd@6.0.0-alpha.0(father@4.6.1(@babel/core@7.28.0)(@types/node@20.19.7)(@types/webpack@5.28.5)(styled-components@6.1.19(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(webpack@5.100.2))(react-dom@19.1.0(react@19.1.0))(react@19.1.0):
     dependencies:
       '@ant-design/colors': 8.0.0
       '@ant-design/cssinjs': 2.0.0-alpha.6(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
@@ -6716,17 +6788,17 @@ snapshots:
       '@rc-component/qrcode': 1.0.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@rc-component/resize-observer': 1.0.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@rc-component/segmented': 1.1.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      '@rc-component/select': 1.1.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@rc-component/select': 1.1.3(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@rc-component/steps': 1.2.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@rc-component/switch': 1.0.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@rc-component/table': 1.4.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@rc-component/tabs': 1.5.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@rc-component/textarea': 1.0.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      '@rc-component/tooltip': 1.2.0(father@4.6.1(@babel/core@7.28.0)(@types/node@20.19.7)(@types/webpack@5.28.5)(styled-components@6.1.19(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(webpack@5.100.1))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@rc-component/tooltip': 1.2.0(father@4.6.1(@babel/core@7.28.0)(@types/node@20.19.7)(@types/webpack@5.28.5)(styled-components@6.1.19(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(webpack@5.100.2))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@rc-component/tour': 2.1.6(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@rc-component/tree': 1.0.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@rc-component/tree-select': 1.2.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      '@rc-component/trigger': 3.4.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@rc-component/trigger': 3.5.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@rc-component/util': 1.2.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       classnames: 2.5.1
       dayjs: 1.11.13
@@ -6966,7 +7038,7 @@ snapshots:
   browserslist@4.25.1:
     dependencies:
       caniuse-lite: 1.0.30001727
-      electron-to-chromium: 1.5.182
+      electron-to-chromium: 1.5.187
       node-releases: 2.0.19
       update-browserslist-db: 1.1.3(browserslist@4.25.1)
 
@@ -7206,7 +7278,7 @@ snapshots:
       postcss: 8.5.6
       postcss-selector-parser: 6.1.2
 
-  css-loader@6.7.1(webpack@5.100.1):
+  css-loader@6.7.1(webpack@5.100.2):
     dependencies:
       icss-utils: 5.1.0(postcss@8.5.6)
       postcss: 8.5.6
@@ -7216,7 +7288,7 @@ snapshots:
       postcss-modules-values: 4.0.0(postcss@8.5.6)
       postcss-value-parser: 4.2.0
       semver: 7.7.2
-      webpack: 5.100.1
+      webpack: 5.100.2
 
   css-prefers-color-scheme@6.0.3(postcss@8.5.6):
     dependencies:
@@ -7324,6 +7396,12 @@ snapshots:
       miller-rabin: 4.0.1
       randombytes: 2.1.0
 
+  dnd-core@16.0.1:
+    dependencies:
+      '@react-dnd/asap': 5.0.2
+      '@react-dnd/invariant': 4.0.2
+      redux: 4.2.1
+
   doctrine@2.1.0:
     dependencies:
       esutils: 2.0.3
@@ -7363,7 +7441,7 @@ snapshots:
 
   ee-first@1.1.1: {}
 
-  electron-to-chromium@1.5.182: {}
+  electron-to-chromium@1.5.187: {}
 
   elliptic@6.6.1:
     dependencies:
@@ -7865,16 +7943,16 @@ snapshots:
     dependencies:
       reusify: 1.1.0
 
-  father@4.6.1(@babel/core@7.28.0)(@types/node@20.19.7)(@types/webpack@5.28.5)(styled-components@6.1.19(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(webpack@5.100.1):
+  father@4.6.1(@babel/core@7.28.0)(@types/node@20.19.7)(@types/webpack@5.28.5)(styled-components@6.1.19(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(webpack@5.100.2):
     dependencies:
       '@microsoft/api-extractor': 7.43.7(@types/node@20.19.7)
       '@umijs/babel-preset-umi': 4.4.11
       '@umijs/bundler-utils': 4.4.11
-      '@umijs/bundler-webpack': 4.4.11(@types/webpack@5.28.5)(typescript@5.4.2)(webpack@5.100.1)
+      '@umijs/bundler-webpack': 4.4.11(@types/webpack@5.28.5)(typescript@5.4.2)(webpack@5.100.2)
       '@umijs/case-sensitive-paths-webpack-plugin': 1.0.1
       '@umijs/core': 4.4.11
       '@umijs/utils': 4.4.11
-      '@utoo/pack': 0.0.1-alpha.23(@types/webpack@5.28.5)(webpack@5.100.1)
+      '@utoo/pack': 0.0.1-alpha.23(@types/webpack@5.28.5)(webpack@5.100.2)
       '@vercel/ncc': 0.33.3
       babel-plugin-dynamic-import-node: 2.3.3
       babel-plugin-module-resolver: 4.1.0
@@ -7951,7 +8029,7 @@ snapshots:
     dependencies:
       is-callable: 1.2.7
 
-  fork-ts-checker-webpack-plugin@8.0.0(typescript@5.4.2)(webpack@5.100.1):
+  fork-ts-checker-webpack-plugin@8.0.0(typescript@5.4.2)(webpack@5.100.2):
     dependencies:
       '@babel/code-frame': 7.27.1
       chalk: 4.1.2
@@ -7966,7 +8044,7 @@ snapshots:
       semver: 7.7.2
       tapable: 2.2.2
       typescript: 5.4.2
-      webpack: 5.100.1
+      webpack: 5.100.2
 
   fraction.js@4.3.7: {}
 
@@ -8119,6 +8197,10 @@ snapshots:
       hash.js: 1.1.7
       minimalistic-assert: 1.0.1
       minimalistic-crypto-utils: 1.0.1
+
+  hoist-non-react-statics@3.3.2:
+    dependencies:
+      react-is: 16.13.1
 
   hpack.js@2.1.6:
     dependencies:
@@ -8449,13 +8531,13 @@ snapshots:
     dependencies:
       language-subtag-registry: 0.3.23
 
-  less-loader@12.3.0(less@4.3.0)(webpack@5.100.1):
+  less-loader@12.3.0(less@4.4.0)(webpack@5.100.2):
     dependencies:
-      less: 4.3.0
+      less: 4.4.0
     optionalDependencies:
-      webpack: 5.100.1
+      webpack: 5.100.2
 
-  less@4.3.0:
+  less@4.4.0:
     dependencies:
       copy-anything: 2.0.6
       parse-node-version: 1.0.1
@@ -9362,6 +9444,22 @@ snapshots:
       react: 19.1.0
       react-dom: 19.1.0(react@19.1.0)
 
+  react-dnd-html5-backend@16.0.1:
+    dependencies:
+      dnd-core: 16.0.1
+
+  react-dnd@16.0.1(@types/node@20.19.7)(@types/react@19.1.8)(react@19.1.0):
+    dependencies:
+      '@react-dnd/invariant': 4.0.2
+      '@react-dnd/shallowequal': 4.0.2
+      dnd-core: 16.0.1
+      fast-deep-equal: 3.1.3
+      hoist-non-react-statics: 3.3.2
+      react: 19.1.0
+    optionalDependencies:
+      '@types/node': 20.19.7
+      '@types/react': 19.1.8
+
   react-dom@19.1.0(react@19.1.0):
     dependencies:
       react: 19.1.0
@@ -9402,6 +9500,10 @@ snapshots:
       picomatch: 2.3.1
 
   real-require@0.1.0: {}
+
+  redux@4.2.1:
+    dependencies:
+      '@babel/runtime': 7.27.6
 
   reflect.getprototypeof@1.0.10:
     dependencies:
@@ -9519,10 +9621,10 @@ snapshots:
   safer-buffer@2.1.2:
     optional: true
 
-  sass-loader@13.3.3(sass@1.54.0)(webpack@5.100.1):
+  sass-loader@13.3.3(sass@1.54.0)(webpack@5.100.2):
     dependencies:
       neo-async: 2.6.2
-      webpack: 5.100.1
+      webpack: 5.100.2
     optionalDependencies:
       sass: 1.54.0
 
@@ -9920,14 +10022,14 @@ snapshots:
       mkdirp: 3.0.1
       yallist: 5.0.0
 
-  terser-webpack-plugin@5.3.14(webpack@5.100.1):
+  terser-webpack-plugin@5.3.14(webpack@5.100.2):
     dependencies:
       '@jridgewell/trace-mapping': 0.3.29
       jest-worker: 27.5.1
       schema-utils: 4.3.2
       serialize-javascript: 6.0.2
       terser: 5.43.1
-      webpack: 5.100.1
+      webpack: 5.100.2
 
   terser@5.43.1:
     dependencies:
@@ -10115,7 +10217,7 @@ snapshots:
 
   webpack-sources@3.3.3: {}
 
-  webpack@5.100.1:
+  webpack@5.100.2:
     dependencies:
       '@types/eslint-scope': 3.7.7
       '@types/estree': 1.0.8
@@ -10124,7 +10226,7 @@ snapshots:
       '@webassemblyjs/wasm-edit': 1.14.1
       '@webassemblyjs/wasm-parser': 1.14.1
       acorn: 8.15.0
-      acorn-import-phases: 1.0.3(acorn@8.15.0)
+      acorn-import-phases: 1.0.4(acorn@8.15.0)
       browserslist: 4.25.1
       chrome-trace-event: 1.0.4
       enhanced-resolve: 5.18.2
@@ -10139,7 +10241,7 @@ snapshots:
       neo-async: 2.6.2
       schema-utils: 4.3.2
       tapable: 2.2.2
-      terser-webpack-plugin: 5.3.14(webpack@5.100.1)
+      terser-webpack-plugin: 5.3.14(webpack@5.100.2)
       watchpack: 2.4.4
       webpack-sources: 3.3.3
     transitivePeerDependencies:
@@ -10227,3 +10329,8 @@ snapshots:
       commander: 9.5.0
 
   zod@3.22.4: {}
+
+  zustand@5.0.6(@types/react@19.1.8)(react@19.1.0):
+    optionalDependencies:
+      '@types/react': 19.1.8
+      react: 19.1.0

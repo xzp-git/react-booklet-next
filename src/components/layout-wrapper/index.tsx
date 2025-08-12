@@ -1,6 +1,8 @@
 'use client';
 import React, {Suspense, useCallback} from 'react';
-import {useRouter} from 'next/navigation';
+import {DndProvider} from 'react-dnd';
+import {HTML5Backend} from 'react-dnd-html5-backend';
+import {usePathname, useRouter} from 'next/navigation';
 import {Layout, Menu, theme} from 'antd';
 
 import routes from '@/routes';
@@ -12,6 +14,7 @@ export default function LayoutWrapper({children}: {children: React.ReactNode}) {
   } = theme.useToken();
 
   const router = useRouter();
+  const pathname = usePathname();
 
   // 用 key 做路由跳转
   const handleClick = useCallback(
@@ -28,8 +31,8 @@ export default function LayoutWrapper({children}: {children: React.ReactNode}) {
         <Menu
           theme="dark"
           mode="inline"
-          defaultSelectedKeys={['/controllable']}
           onClick={handleClick}
+          selectedKeys={[pathname]}
           items={routes
             .filter((route) => !route.hideInMenu)
             .map(({path, title}) => ({
@@ -39,17 +42,19 @@ export default function LayoutWrapper({children}: {children: React.ReactNode}) {
         />
       </Sider>
       <Layout>
-        <Content
-          style={{
-            margin: '24px 16px',
-            padding: 24,
-            minHeight: 280,
-            background: colorBgContainer,
-            borderRadius: borderRadiusLG
-          }}
-        >
-          <Suspense fallback={<div>加载中...</div>}>{children}</Suspense>
-        </Content>
+        <DndProvider backend={HTML5Backend}>
+          <Content
+            style={{
+              margin: '24px 16px',
+              padding: 24,
+              minHeight: 280,
+              background: colorBgContainer,
+              borderRadius: borderRadiusLG
+            }}
+          >
+            <Suspense fallback={<div>加载中...</div>}>{children}</Suspense>
+          </Content>
+        </DndProvider>
       </Layout>
     </Layout>
   );
